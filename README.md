@@ -11,4 +11,3 @@
 - **Rasterio**
 - **scikit-learn**
 - **matplotlib**
-- 
