@@ -34,7 +34,7 @@ y = data['Label']
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
 # Шаг 2: Создание модели MLP
-mlp = MLPClassifier(hidden_layer_sizes=(64, 32), max_iter=500, random_state=42)
+mlp = MLPClassifier(hidden_layer_sizes=(64, 32, 5), max_iter=500, random_state=42)
 
 # Обучение модели
 mlp.fit(X_train, y_train)
@@ -48,5 +48,5 @@ print(classification_report(y_test, y_pred))
 
 # Шаг 4: Сохранение модели и подготовка для интеграции
 import joblib
-joblib.dump(mlp, 'mlp_model.pkl')
-print("Модель сохранена как 'mlp_model.pkl'")
+joblib.dump(mlp, 'mlp_model2.pkl')
+print("Модель сохранена как 'mlp_model2.pkl'")

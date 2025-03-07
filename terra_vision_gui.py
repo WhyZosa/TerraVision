@@ -131,7 +131,7 @@ class TerraVisionGUI(QMainWindow):
         # Загружаем модель MLP
         try:
             import joblib
-            self.mlp_model = joblib.load('mlp_model.pkl')
+            self.mlp_model = joblib.load('mlp_model2.pkl')
         except Exception as e:
             QMessageBox.critical(self, "Ошибка", f"Не удалось загрузить модель MLP:\n{e}")
 

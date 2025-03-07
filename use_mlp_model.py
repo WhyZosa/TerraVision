@@ -2,7 +2,7 @@ import joblib
 import pandas as pd
 
 # Загрузка модели
-mlp_model = joblib.load('mlp_model.pkl')
+mlp_model = joblib.load('mlp_model2.pkl')
 
 def classify_land_use(ndvi, savi, swir):
     """
